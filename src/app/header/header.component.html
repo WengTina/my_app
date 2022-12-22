@@ -15,36 +15,36 @@
       </button>
       <span>My App</span>
       <span class="example-spacer"></span>
-      <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>favorite</mat-icon>
-      </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>share</mat-icon>
-      </button> -->
       
-      <button mat-icon-button class="example-icon list-icon" aria-label="Example icon-button with list icon">
+      
+      <button mat-icon-button class="example-icon list-icon" aria-label="Example icon-button with list icon" (click)="sideNavnew.toggle()">
         <mat-icon  >more_vert</mat-icon>
 
-        <mat-list role="list">
+        <!-- <mat-list role="list">
             <mat-list-item role="listitem">Item 1</mat-list-item>
             <mat-list-item role="listitem">Item 2</mat-list-item>
             <mat-list-item role="listitem">Item 3</mat-list-item>
-          </mat-list>
+        </mat-list> -->
+        
 
       </button>
+      
 
     </mat-toolbar>
 
     
 
+    
+    <!--左邊menu  -->
     <mat-sidenav-container>
 
         <mat-sidenav #sideNav class="sidenav" mode="push" opened>
             <mat-nav-list>
                 
-                <a mat-list-item routerLink="home"><mat-icon>home</mat-icon><span>Home</span></a>
-                <a mat-list-item routerLink="home"><mat-icon>credit_card</mat-icon><span>Card</span></a>
-                <a mat-list-item routerLink="home"><mat-icon>shopping_cart</mat-icon><span>Shopping Cart</span></a>
+                <a mat-list-item routerLink="home">
+                  <mat-icon >home</mat-icon><span class="example-spacer">&nbsp;&nbsp;Home</span></a>
+                <a mat-list-item routerLink="home"><mat-icon>credit_card</mat-icon><span >&nbsp;&nbsp;Card</span></a>
+                <a mat-list-item routerLink="home"><mat-icon>shopping_cart</mat-icon><span>&nbsp;&nbsp;Shopping Cart</span></a>
                 
             </mat-nav-list>
             
@@ -57,4 +57,21 @@
     
     </mat-sidenav-container>
 
+    <!-- 右側 -->
+
+    <mat-sidenav-container>
+
+        <mat-sidenav #sideNavnew class="sideNavnew" mode="push" opened position="end">
+            <mat-nav-list>
+                
+                <a mat-list-item routerLink="home">
+                  <mat-icon >home</mat-icon><span class="example-spacer">&nbsp;&nbsp;Home</span></a>
+                <a mat-list-item routerLink="home"><mat-icon>credit_card</mat-icon><span >&nbsp;&nbsp;Card</span></a>
+                <a mat-list-item routerLink="home"><mat-icon>shopping_cart</mat-icon><span>&nbsp;&nbsp;Shopping Cart</span></a>
+                
+            </mat-nav-list>
+            
+        </mat-sidenav>
+    </mat-sidenav-container>
+    
 

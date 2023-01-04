@@ -17,6 +17,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CardComponent } from './card/card.component';
 import { TableComponent } from './table/table.component';
+import { SettingComponent } from './setting/setting.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 
@@ -31,7 +33,9 @@ import { TableComponent } from './table/table.component';
     SignUpComponent,
     HeaderComponent,
     CardComponent,
-    TableComponent
+    TableComponent,
+    SettingComponent,
+    LogoutComponent
 
   ],
   imports: [

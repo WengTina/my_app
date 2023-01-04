@@ -19,6 +19,7 @@ import { CardComponent } from './card/card.component';
 import { TableComponent } from './table/table.component';
 import { SettingComponent } from './setting/setting.component';
 import { LogoutComponent } from './logout/logout.component';
+import { HelpcenterComponent } from './helpcenter/helpcenter.component';
 
 
 
@@ -35,7 +36,8 @@ import { LogoutComponent } from './logout/logout.component';
     CardComponent,
     TableComponent,
     SettingComponent,
-    LogoutComponent
+    LogoutComponent,
+    HelpcenterComponent
 
   ],
   imports: [

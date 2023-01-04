@@ -1,3 +1,4 @@
+import { HelpcenterComponent } from './helpcenter/helpcenter.component';
 import { SettingComponent } from './setting/setting.component';
 import { HomeComponent } from './home/home.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -21,7 +22,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'setting',component: SettingComponent},
-  { path: 'help',component: HomeComponent},
+  { path: 'help',component: HelpcenterComponent},
   { path: 'logout',component: LogoutComponent},
   { 
    path: 'card',

@@ -15,6 +15,8 @@ import { LandingComponent } from './landing/landing.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { CardComponent } from './card/card.component';
+import { TableComponent } from './table/table.component';
 
 
 
@@ -27,7 +29,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     LandingComponent,
     SignUpComponent,
-    HeaderComponent
+    HeaderComponent,
+    CardComponent,
+    TableComponent
 
   ],
   imports: [
